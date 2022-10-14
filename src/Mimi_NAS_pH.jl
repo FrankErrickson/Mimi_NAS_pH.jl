@@ -13,7 +13,7 @@ co2_data = DataFrame(load(joinpath(@__DIR__, "..", "data", "ssp_co2_concentratio
 
 # Create a function to set up and run the Ocean pH compoennt as a stand-alone Mimi model.
 # 'ssp_emissions_scenario' options = "SSP1-19", "SSP1-26", "SSP2-45", "SSP3-70", "SSP5-85"
-function get_model(;ssp_emissions_scenario::String="SSP1-19")
+function get_model(; ssp_emissions_scenario::String="SSP1-19")
 
     # Initialize a Mimi model.
     m = Model()
