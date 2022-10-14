@@ -4,9 +4,9 @@
 
 @defcomp ocean_pH begin
 
-    β1           = Parameter()             # Multiplicative term from pH approximation (from Equation 7 in Appendix F).
-    β2           = Parameter()             # Additive term from pH approximation (from Equation 7 in Appendix F).
-    pH_0         = Parameter()             # Globally averaged ocean pH for first model timestep.
+    β1 = Parameter()             # Multiplicative term from pH approximation (from Equation 7 in Appendix F).
+    β2 = Parameter()             # Additive term from pH approximation (from Equation 7 in Appendix F).
+    pH_0 = Parameter()             # Globally averaged ocean pH for first model timestep.
     atm_co2_conc = Parameter(index=[time]) # Atmospheric CO₂ concentration used to approximate CO₂ partial pressure of the surface ocean (ppm, 10⁻⁶ mol CO₂ per mol air)
 
     pH = Variable(index=[time])            # Globally averaged ocean pH (-log₁₀[H⁺]).
